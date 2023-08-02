@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336842185221",
+    "project_id": "fir-a80d2",
+    "storage_bucket": "fir-a80d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336842185221:android:2841b89cb5d34c5c589a6c",
+        "android_client_info": {
+          "package_name": "com.example.youtube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336842185221-k4utnpgakl5mpkuqpuin9n0qff341i9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa6y1S4peB_29qOJoEt1ZrvJ5uTq6nBlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336842185221-k4utnpgakl5mpkuqpuin9n0qff341i9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

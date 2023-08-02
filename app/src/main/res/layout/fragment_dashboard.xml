@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentChannel.dashboardFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:background="@color/youtubeRed"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/youtubeRed"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/channelname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Channel Name"
+                android:textColor="@color/white"
+                android:padding="@dimen/_10ssp"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_15ssp"
+                />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/youtubeRed"
+        android:theme="@style/Dashboard"
+        app:menu="@menu/toolbar_menu"
+        />
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+            android:background="@color/youtubeRed"
+            >
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/videos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VIDEOS"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/playlists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PLAYLISTS"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/subscriptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBSCRIPTIONS"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABOUT"
+                />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>
